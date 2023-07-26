@@ -3,10 +3,15 @@
 <head>
     <title>My Website</title>
     <style>
+        @font-face {
+            font-family: 'Future';
+            src: url('Future.ttf') format('truetype'); /* Replace 'path/to' with the actual path to your 'Future.ttf' file */
+        }
+
         body {
-            background-color: #f0f0f0;
+            background-color: #000;
             color: red;
-            font-family: Arial, sans-serif;
+            font-family: 'Future', Arial, sans-serif; /* Apply the 'Future' font */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -16,8 +21,9 @@
         }
 
         .header {
-            color: blue;
+            color: #00ff00;
             font-size: 36px;
+            text-shadow: 0 0 10px #00ff00;
         }
 
         .button-container {
@@ -27,6 +33,16 @@
         /* Style the "About" link to remove underline */
         .button-container a {
             text-decoration: none;
+            color: #ff0066;
+        }
+
+        .button-container a:hover {
+            color: #cc0052;
+        }
+
+        h1 {
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000;
         }
     </style>
 </head>
@@ -35,9 +51,9 @@
         LostSociety
     </div>
     <div class="button-container">
-        <h1>Keep looking</h1>
-        <!-- "About" link without underline -->
+        <h1 style="text-shadow: 0 0 10px #ff0000;">Keep looking</h1>
         <a href="2Page.html">‎ ‎ </a>
     </div>
 </body>
 </html>
+
