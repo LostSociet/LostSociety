@@ -3,67 +3,67 @@
 <head>
     <title>My Website</title>
     <style>
+        @font-face {
+            font-family: 'Future';
+            src: url('Future.ttf') format('truetype');
+        }
+
         body {
-            background-color: #f0f0f0;
+            background-color: #000;
             color: red;
-            font-family: Arial, sans-serif; /* Set the font-family to Arial or any other smooth font */
+            font-family: 'Future', Arial, sans-serif; /* Apply the 'Future' font */
             display: flex;
+            flex-direction: column; /* Added to stack the elements vertically */
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            position: relative; /* Add this to make the container relative for absolute positioning */
+            position: relative;
         }
 
         .header {
+            color: #00ff00;
+            font-size: 36px;
+            text-shadow: 0 0 10px #00ff00;
             position: absolute;
             top: 10px;
             left: 10px;
-            color: blue;
-            font-size: 36px;
-            z-index: 1; /* Ensures the text appears in front of the colored bar */
         }
 
-        /* Colored bar behind the text */
         .colored-bar {
-            background-color: red;
+            background-color: #ff0000;
             width: 100%;
-            height: 60px; /* Increase height to make the bar slightly bigger */
+            height: 60px;
             position: absolute;
-            top: 0; /* Position the bar right behind the text */
+            top: 0;
             left: 0;
-            z-index: 0; /* Ensure the bar is behind the text */
+            z-index: 0;
+            box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000;
         }
 
-        /* Style the button */
         .button {
             padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
+            background-color: #00ff00; /* Green color for the button background */
+            color: #ff0000; /* Red text color for the button */
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 20px; /* Rounded edges */
             font-size: 18px;
-        }
-
-        /* Center the button */
-        .button-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00; /* Neon glowing effect */
         }
     </style>
 </head>
 <body>
-    <div class="colored-bar"></div> <!-- Colored bar behind the text -->
+    <div class="colored-bar"></div>
 
     <div class="header">
         LostSociety
     </div>
 
-    <!-- Text button that redirects to the link -->
     <div class="button-container">
         <a class="button" href="https://i.ibb.co/f4WDQbW/Good-Music.png" download>Image?</a>
     </div>
 </body>
 </html>
+
